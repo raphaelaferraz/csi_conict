@@ -134,3 +134,11 @@ idea/
 
 # Settings local
 *.ini
+
+# statcfiles
+./staticfiles
+staticfiles/
+
+# Media
+media/
+./media
