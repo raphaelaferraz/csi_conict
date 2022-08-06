@@ -1,0 +1,2274 @@
+@media screen and (min-width: 0){
+    /* Cabecalho */
+    .cabecalho {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #cabecalho_menu_checkbox {
+        opacity: 0;
+
+        position: absolute;
+    }
+
+    .cabecalho__menu-mobile__input__label {
+        cursor: pointer;
+        
+        color: transparent;
+        
+        height: 22px;
+        width: 30px;
+
+        position: relative;
+
+        display: block;
+    }
+
+    .cabecalho__menu-mobile__input__label__linhas {
+        border-radius: 30px;
+        transition: .25s ease-in-out;
+
+        background-color: #FFFFFF;
+
+        height: 2px;
+        width: 100%;
+
+        display: block;
+        position: absolute;
+    }
+
+    .cabecalho__menu-mobile__input__label__linhas:nth-child(1) {
+        top: 0;
+    }
+
+    .cabecalho__menu-mobile__input__label__linhas:nth-child(2) {
+        top: 8px;
+    }
+
+    .cabecalho__menu-mobile__input__label__linhas:nth-child(3) {
+        top: 16px;
+    }
+
+    .cabecalho__menu-mobile__input:checked + .cabecalho__menu-mobile__input__label span:nth-child(1) {
+        transform: rotate(-45deg);
+
+        top: 8px;
+    }
+
+    .cabecalho__menu-mobile__input:checked + .cabecalho__menu-mobile__input__label span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .cabecalho__menu-mobile__input:checked + .cabecalho__menu-mobile__input__label span:nth-child(3) {
+        transform: rotate(45deg);
+
+        top: 8px;
+    }
+
+
+    .cabecalho__conteiner {
+        width: 100%;
+    }
+
+    .cabecalho__navegacao {
+        display: block;
+    }
+
+    .cabecalho__logo__link__imagem {
+        display: none;
+    }
+
+    .cabecalho__conteiner__logo {
+        width: calc(100% - 31px);
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+         padding: 0 1.875rem 0 1.875rem;
+    }
+
+    .cabecalho__logo {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .cabecalho__logo__link__imagem-mobile {
+        display: block;
+
+        margin: 0.5rem 0 .5rem 0;
+    }
+
+    .cabecalho__navegacao__lista {
+        display: none;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .cabecalho__navegacao__lista__item {
+        border-bottom: 1px solid #20e456;
+        border-top: 1px solid #20e456;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+
+        width: 100%;
+    }
+
+    .cabecalho__navegacao__lista__item__link {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .cabecalho__navegacao__lista__item__link--icone::after {
+        background: url("../img/seta_recolhe.svg");
+        content: " ";
+        transition-duration: .7s;
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+    }
+    
+    .rodar__item__link--icone::after{
+        transform: rotate(180deg);
+    }
+
+    .cabecalho__navegacao__lista__item:hover .cabecalho__navegacao__sublista, .cabecalho__navegacao__lista .cabecalho__navegacao__lista__item.over .cabecalho__navegacao__sublista {
+        display: none;
+    }
+
+    .cabecalho__navegacao__sublista {
+        background: rgba(0, 0, 0, 0.6);
+
+        position: relative;
+
+        display: none;
+    }
+
+    .cabecalho__navegacao__sublista__item {
+        border-bottom: 1.5px solid #20E456;
+        border-top: 1.5px solid #20e456;
+        font-size: 1.08rem;
+        letter-spacing: 1px;
+
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        padding: .3rem;
+    }
+
+    .cabecalho__navegacao__sublista__item:hover {
+        background: transparent;
+    }
+    
+    .cabecalho__navegacao__sublista__item__link {
+        text-align: initial;
+    }
+
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(1)::before {
+        background: url("../img/icone_email.svg");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(2)::before {
+        background: url("../img/icone_desenvolver.svg");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(3)::before {
+        background: url("../img/icone_newsletter.svg");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(4)::before {
+        background: url("../img/icone_sobre_o_projeto.svg");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(5)::before {
+        background: url("../img/icone_instituicao.svg");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(6)::before {
+        background: url("../img/icone_pesquisa.svg");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+   
+    .cabecalho__navegacao__sublista__item--ferramentas:nth-child(1)::before {
+        background: url("/static/assets/img/icone_validador_de_url.svg");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+        margin-left: 1rem;
+    }
+
+    .cabecalho__navegacao__sublista__item--ferramentas:nth-child(2)::before {
+        background: url("/static/assets/img/icone_gerador_de_senhas.svg");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+
+    .cabecalho__navegacao__sublista__item--ferramentas:nth-child(3)::before {
+        background: url("/static/assets/img/icone_nosso_app.svg");
+        content: " ";
+
+        height: 26px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+
+    .cabecalho__navegacao__sublista__item--ferramentas:nth-child(4)::before {
+        background: url("/static/assets/img/icone_recomendacao.svg");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+    
+    .cabecalho__navegacao__sublista__item--tutoriais:nth-child(1)::before {
+        background: url("/static/assets/img/icone_verificacao_em_duas_etapas.svg");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem
+    }
+
+    .cabecalho__navegacao__sublista__item--tutoriais:nth-child(2)::before {
+        background: url("/static/assets/img/icone_baixe_nosso_app.svg");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem
+    }
+
+    .cabecalho__navegacao__sublista__item--tutoriais:nth-child(3)::before {
+        background: url("/static/assets/img/icone_desenvolver.svg");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem
+    }
+
+    .cabecalho__navegacao__sublista__item--tutoriais:nth-child(4)::before {
+        background: url("/static/assets/img/icone_cabecalho_navegadores.svg");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem
+    }
+
+    .cabecalho__navegacao__sublista__item--tutoriais:nth-child(5)::before {
+        background: url("/static/assets/img/icone_ver_mais.svg");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem
+    }
+    
+    .cabecalho__navegacao__sublista__item--conceitos:nth-child(1)::before {
+        background: url("../img/icone_ciberseguranca.svg") no-repeat;
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+
+    .cabecalho__navegacao__sublista__item--conceitos:nth-child(2)::before {
+        background: url("../img/icone_crimes_ciberneticos.svg");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+
+   .cabecalho__navegacao__sublista__item--conceitos:nth-child(3)::before {
+        background: url("../img/icone_dicionario_de_ciberseguranca.svg");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+
+    .cabecalho__navegacao__sublista__item--conceitos:nth-child(4)::before {
+        background: url("../img/icone_ver_mais.svg");
+        content: " ";
+
+        height: 24px;
+        width: 24px;
+
+        display: block;
+
+        margin-left: 1rem;
+    }
+    
+    
+    /* Rodapé */
+    .rodape {
+        padding: 0 1.625rem 0 1.625rem;
+    }
+
+    .rodape__secao-informacoes__conteiner-logotipo {
+        display: flex;
+        justify-content: center;
+
+        padding: 2.5rem 0 2.5rem 0;
+    }
+
+    .rodape__secao-informacoes__secao-redes-sociais__lista, .rodape__navegacao__conteiner-tutoriais, .rodape__navegacao__conteiner-artigos {
+        margin-bottom: 1.875rem;
+    }
+
+    .rodape__navegacao__conteiner-sobre-nos__lista__item, .rodape__navegacao__conteiner-ferramentas__lista__item, .rodape__navegacao__conteiner-tutoriais__lista__item, .rodape__navegacao__conteiner-artigos__lista__item {
+        margin: .30rem 0 .30rem 0;
+    }
+
+    .rodape__secao-informacoes__secao-redes-sociais__titulo, .rodape__navegacao__conteiner-sobre-nos__lista__item__titulo, .rodape__navegacao__conteiner-ferramentas__lista__item__titulo, .rodape__navegacao__conteiner-tutoriais__lista__item__titulo, .rodape__navegacao__conteiner-artigos__lista__item__titulo {
+        font-size: 1.125rem;
+
+        margin: .75rem 0 .75rem 0;
+    }
+
+    .rodape__navegacao__conteiner-ferramentas {
+        margin: 1.875rem 0 1.875rem 0;
+    }
+
+    .rodape__secao-selos__link {
+        gap: 1rem;
+
+        margin: 2.5rem 0 2.5rem 0;
+    }
+    
+    
+    /* Fale Conosco */
+     .secao-inicio {
+        color: #ffffff;
+        text-align: center;
+
+        margin: 2.5rem 1.15625rem 2.5rem 1.15625rem;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .secao-inicio__conteiner {
+        margin-top: 1rem;
+    }
+
+    .secao-inicio__conteiner__subtitulo {
+        font-size: .875rem;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 1.5rem;
+    }
+
+    .secao-contato {
+        margin: 2.5rem 1.15625rem 2.5rem 1.15625rem;
+    }
+
+    .secao-contato__formulario__usuario, .secao-contato__formulario__mensagem, .secao__contato__formulario__resposta, .secao-contato__formulario__resposta {
+        border: none;
+
+        margin: 0;
+        padding:0;
+    }
+
+    .secao-contato__formulario__usuario__label, .secao-contato__formulario__mensagem__label, .secao-contato__formulario__resposta__label, .secao-contato__formulario__resposta__label__checkbox, .secao-contato__formulario__resposta__legenda {
+        color: #FFFFFF;
+
+        margin-bottom: .1875rem;
+        margin-left: .6875rem;
+    }
+
+    .secao-contato__formulario__usuario__conteiner, .secao-contato__formulario__mensagem__conteiner, .secao-contato__formulario__resposta__conteiner {
+        margin-bottom: 2.5rem;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secao-contato__formulario__usuario__input, .secao-contato__formulario__mensagem__selecionar, .secao-contato__formulario__resposta__checkbox, .secao-contato__formulario__mensagem__textarea {
+        background-color: #1B341D;
+        border: none;
+        border-radius: 15px;
+        box-shadow: none;
+        outline: none;
+    }
+
+    .secao-contato__formulario__usuario__input, .secao-contato__formulario__mensagem__selecionar, .secao-contato__formulario__resposta__checkbox {
+        color: #FFFFFF;
+
+        height: 3.125rem;
+    }
+
+    .secao-contato__formulario__usuario__input, .secao-contato__formulario__mensagem__selecionar {
+        padding-left: .875rem;
+    }
+
+    .secao-contato__formulario__mensagem__selecionar {
+        padding-right: .875rem;
+    }
+
+    .secao-contato__formulario__resposta__checkbox {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .secao-contato__formulario__resposta__checkbox--email, .secao-contato__formulario__resposta__checkbox--whatsapp {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .secao-contato__formulario__usuario__input:focus, .secao-contato__formulario__mensagem__selecionar:focus, .secao-contato__formulario__mensagem__textarea:focus, .secao-contato__formulario__botao:focus {
+        border: 1px solid #20e456;
+    }
+
+    .secao-contato__formulario__resposta__checkbox {
+        padding: 0 .875rem 0 .875rem
+    }
+
+    .secao-contato__formulario__mensagem__textarea {
+        color: #FFFFFF;
+
+        height: 10rem;
+
+        padding: .875rem 0 0 .875rem;
+    }
+
+    .secao-contato__formulario__conteiner {
+        display: flex;
+        justify-content: center;
+    }
+
+    .secao-contato__formulario__botao {
+        background-color: #1B341D;
+        color: #FFFFFF;
+        border: none;
+        border-radius: 15px;
+
+        font-weight: bold;
+        letter-spacing: 1.2px;
+
+        height: 3.125rem;
+        width: 15.625rem;
+
+        margin-bottom: 1rem;
+    }
+    
+     /* Newsletter */
+    .secao-inicio__titulo--newsletter {
+        letter-spacing: 1.5px;
+        line-height: 2rem;
+    }
+
+    .secao-inicio__titulo--cor {
+        animation: secao-inicio__titulo--cor--animacao 2.5s steps(50) 1s normal both;
+        overflow: hidden;
+
+        white-space: nowrap;
+    }
+
+    @keyframes secao-inicio__titulo--cor--animacao {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    .secao-inicio__conteiner__subtitulo {
+        letter-spacing: 1.5px;
+    }
+
+    .conteiner--newsletter {
+        margin: 1.875rem;
+    }
+
+    .secao-contato__formulario--newsletter {
+        background: #1B341D;
+
+        border-radius: 15px;
+
+        padding: 1.84375rem 1.5rem 1.84375rem 1.5rem;
+    }
+
+    .secao-contato__formulario__usuario__input--newsletter, .secao-contato__formulario__botao--newsletter {
+        background: #031805;
+    }
+    
+    /* Link de voltar ao topo */
+    .conteiner__link-voltar-ao-topo {
+        border: 0;
+        opacity: 0.4;
+    }
+    
+    /* Página do conteúdo de Artigos/Conceitos */
+    .principal-artigo {
+        margin: 0 1.5625rem 0 1.5625rem;
+    }
+
+    .secao-inicio-artigo__titulo {
+        font-size: 1.75rem;
+    }
+
+    .secao-inicio-artigo__conteiner__imagem {
+        margin-bottom: 1rem;
+    }
+
+    .secao-informacoes-artigo__span {
+        display: none;
+    }
+
+    .secao-conteudo__artigo__paragrafo {
+        margin: 1rem 0 1rem 0;
+    }
+
+    .secao-conteudo__artigo__paragrafo, .secao-conteudo-artigo__paragrafo__lista {
+        color: #DFD9D9;
+        font-size: 1.1rem;
+        letter-spacing: 1.5px;
+        line-height: 2.5rem;
+    }
+
+    .secao-conteudo-artigo__paragrafo__lista {
+        margin: 1rem 0 1.2rem 1.5rem;
+    }
+
+    .secao-conteudo__artigo-referencias {
+        margin-top: 3rem;
+    }
+
+    .secao-artigos-relacionados {
+        border-top: 1px solid #20e456;
+
+        margin-top: 6rem;
+    }
+
+    .secao-artigos-relacionados__titulo {
+        font-size: 1.5rem;
+    }
+
+    .secao-artigos-relacionados__lista__item {
+        margin-bottom: 3rem;
+    }
+
+    .secao-artigos-relacionados__lista__item__link__artigo {
+        font-size: 1.1rem;
+    }
+    
+    
+    /* Dicionário de Cibersegurança */
+    .secao-conteudo__artigo-nao-encontrado {
+       flex-direction: column;
+    }
+    
+    
+    /* Desenvolvedores */
+    .secao-cards-desenvolvedores, .secao-cards-orientadores {
+        margin: 0 1.96875rem 0 1.96875rem;
+    }
+
+     .secao-cards-desenvolvedores__lista__item, .secao-cards-orientadores__lista__item {
+         margin-bottom: 2rem;
+     }
+
+     .secao-cards-desenvolvedores__lista__item__conteiner--icone-sem-fundo-mobile {
+         background: url("../img/icone_desenvolver_sem_fundo.svg");
+         z-index: -1;
+
+        height: 40px;
+        width: 40px;
+
+        display: flex;
+        position: absolute;
+
+        margin: 0.75rem 0 0 0.75rem;
+     }
+
+     .secao-cards-desenvolvedores__lista__item__conteiner--icone-sem-fundo-desktop {
+         background: url("../img/icone_desenvolver_com_fundo.svg");
+         z-index: -1;
+
+        height: 40px;
+        width: 40px;
+
+        display: flex;
+        position: absolute;
+
+        margin: 0.75rem 0 0 0.75rem;
+     }
+
+    .secao-cards-desenvolvedores__lista__item__titulo, .secao-cards-orientadores__lista__item__titulo {
+        color: #FFFFFF;
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-align: center;
+
+        padding: 0 0.4rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .secao-cards-desenvolvedores__lista__item__paragrafo, .secao-cards-orientadores__lista__item__paragrafo {
+        color: #DFD9D9;
+        font-size: .90rem;
+        letter-spacing: 1px;
+        text-align: center;
+
+        margin-bottom: 1.25rem;
+        padding: 0.4rem;
+    }
+
+    .secao-cards-desenvolvedores__lista__item__secao-redes-sociais__conteiner, .secao-cards-orientadores__lista__item__secao-redes-sociais__conteiner {
+        margin-bottom: 1.25rem;
+    }
+    
+    
+    /* Instituição */
+    .principal-instituicao {
+        margin: 0 1.5625rem 0 1.5625rem;
+    }
+
+    .secao-inicio--instituicao {
+        margin: 2rem 0 2rem 0;
+    }
+
+    .secao-inicio__titulo--instituicao {
+        animation: secao-inicio__titulo--animacao--instituicao 2s steps(50) 1s normal both;
+        overflow: hidden;;
+
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .secao-informacoes-ifsp__conteiner__informacoes {
+        margin-bottom: .5rem;
+    }
+
+    .secao-informacoes-ifsp__titulo {
+        font-size: 1.2rem;
+        font-weight: 400;
+        letter-spacing: 1.5px;
+    }
+
+    .secao-informacoes-ifsp__conteiner__imagem {
+        width: 100%;
+    }
+
+    .conteiner__linha--instituicao {
+        margin-top: 5rem;
+    }
+
+    .secao-conteudo-informacoes-ifsp__secao__conteiner__paragrafo, .secao-conteudo-informacoes-ifsp__secao__conteiner__paragrafo__link {
+        color: #DFD9D9;
+        font-size: .875rem;
+        text-decoration: none;
+
+        margin-top: .4rem;
+    }
+    
+    
+    /* Página geral de artigos */
+    .secao-inicio--pagina-geral-de-artigos__conteiner__titulo {
+        font-size: 1.75rem;
+
+        padding: 2.4375rem 0 0 0;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__conteiner--input__label__input {
+        width: 100%;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes__titulo, .secao-artigos-gerais--pagina-geral-de-artigos__titulo {
+        font-size: 1.65rem;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__conteiner, .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes__conteiner-margem, .secao-artigos-gerais--pagina-geral-de-artigos {
+        margin: 0 1.5625rem 0 1.5625rem;
+    }
+
+    .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes__titulo {
+        margin-top: 2.1875rem;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards {
+        overflow: hidden;
+        width: auto;
+        height: auto;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-data__paragrafo, .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-tempo__paragrafo {
+        font-size: .8rem;
+
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista {
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(0);
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item {
+        box-shadow: 0 0 .70rem #00ff44;
+
+        height: auto;
+        width: 30rem;
+
+        margin: .4rem 0 1rem 2rem;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos::after {
+        height: 14%;
+
+        transform: skewY(-5deg);
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__conteiner__imagem, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__conteiner__imagem {
+        width: 100%;
+    }
+
+    .secao-artigos-gerais--pagina-geral-de-artigos__titulo {
+        margin-top: 6.5rem;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item {
+        width: 100%;
+    }
+
+    .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao__conteiner-data__paragrafo, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao__conteiner-tempo__paragrafo {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    
+    /* Pesquisas */
+    .principal--pesquisa {
+        margin: 0 1.5625rem 0 1.5625rem;
+    }
+
+    .secao-inicio__titulo--pesquisa {
+        font-size: 1.5rem;
+    }
+
+    .secao-conteudo-topico__conteiner__titulo {
+        font-size: 1rem;
+        font-weight: 100;
+        letter-spacing: 1.1px;
+    }
+
+    .secao-conteudo-topico__conteiner--linha {
+        background: #20e456;
+        box-shadow: 0 0 1rem #20e456;
+
+        height: 1px;
+        width: 100%;
+    }
+    
+    
+    /* Política de Privacidade e Termos de Uso */
+    .principal--documentos {
+        margin: 0 1.5625rem 0 1.5625rem;
+    }
+
+    .secao-conteudo-documentos__conteiner__titulo {
+        font-size: 1.2rem;
+
+        margin: 2.5rem 0 2.5rem 0;
+    }
+
+    .secao-conteudo-documentos__artigo__paragrafo, .secao-conteudo-documentos__artigo__lista__item__paragrafo {
+        font-size: 1rem;
+    }
+
+    .conteiner__linha--documentos {
+        margin-top: 5rem;
+    }
+
+    .secao-conteudo-documentos__artigo__lista {
+        margin-left: 1.5rem;
+    }
+
+    .secao-conteudo-documentos__artigo__lista__item {
+        margin-bottom: 1.2rem
+    }
+    
+    
+    /* Página geral de Tutoriais */
+    .secao-inicio--pagina-geral-de-tutoriais::after, .secao-inicio--pagina-categoria-tutoriais::after {
+        height: 14%;
+
+        transform: skewY(-5deg);
+    }
+    
+    .secao-inicio--pagina-geral-de-tutoriais__conteiner, .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__conteiner-margem, .secao-tutoriais-gerais--pagina-geral-de-tutoriais {
+       margin: 0 1.5625rem 0 1.5625rem
+    }
+    
+    .secao-inicio--pagina-geral-de-tutoriais__conteiner__titulo {
+        font-size: 1.75rem;
+        padding: 2.4375rem 0 0 0;
+    }
+    
+    .secao-inicio--pagina-geral-de-tutoriais__conteiner--input__label__input, .secao-inicio--pagina-categoria-tutoriais__conteiner--input__label__input {
+        width: 100%;
+    }
+    
+    .secao-inicio--pagina-geral-de-tutoriais__conteiner--input {
+        margin: 2.5rem 0 2.5rem 0;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__titulo {
+        font-size: 1.65rem;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards {
+        overflow: hidden;
+        
+        width: auto;
+        height: auto;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista {
+        transition: transform 0.5s ease-in-out;
+        transform: translateX(0);
+    }
+    
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item, .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item, .secao-tutoriais--pagina-categoria-tutoriais__lista__item {
+        width: 100%;
+    }
+    
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item {
+        box-shadow: 0 0 0.7rem #00ff44;
+
+        height: auto;
+        width: 30rem;
+
+        margin: 0.4rem 0 1rem 2rem;
+    }
+    
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao__conteiner-minutos-leitura__paragrafo, .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__secao__conteiner-minutos-video__paragrafo {
+        font-size: .8rem;
+    }
+    
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__titulo {
+        margin-top: 10rem;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes {
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: .75rem;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao-voltar {
+        background-image: url("../img/icone_voltar_botao_categoria.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao-avancar {
+        background-image: url("../img/icone_avancar_botao_categoria.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria--espacamento {
+        margin-top: 4rem;
+    }
+    
+    
+    /* Página de categoria dos tutoriais */
+    .secao-inicio--pagina-categoria-tutoriais::after {
+        height: 16%;
+    }
+
+    .secao-inicio--pagina-categoria-tutoriais__conteiner, .secao-tutoriais--pagina-categoria-tutoriais {
+        margin: 0 1.5625rem 0 1.5625rem
+    }
+
+    .secao-inicio--pagina-categoria-tutoriais__conteiner__titulo {
+        font-size: 1.2rem;
+
+        padding: 2.4375rem 0 0 0;
+    }
+
+    .secao-inicio--pagina-categoria-tutoriais__conteiner__titulo__span {
+        font-size: 1.5rem;
+
+        align-items: center;
+        display: flex;
+        gap: 1rem;
+
+        margin-top: .5rem;
+    }
+
+    .secao-tutoriais--pagina-categoria-tutoriais__lista {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .secao-inicio--pagina-categoria-tutoriais__conteiner--input {
+        padding: 2.5rem 0 3rem 0;
+    }
+
+     .secao-tutoriais--pagina-categoria-tutoriais {
+         margin-top: 3.5rem;
+     }
+    
+    
+    .principal--tutorial {
+        margin: 0 1.5625rem 0 1.5625rem;
+    }
+
+    .secao-caminho-tutorial {
+        margin: 2rem 0 1.25rem 0;
+    }
+
+    .secao-inicio-tutorial__titulo {
+        color: #FFFFFF;
+        letter-spacing: 1.5px;
+        font-size: 1.75rem;
+
+        margin-bottom: .625rem;
+    }
+
+    .secao-inicio-tutorial__conteiner__imagem {
+        margin-bottom: 1rem;
+    }
+
+    .secao-informacoes-tutorial {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .secao-informacoes-tutorial__conteiner--leitura-data-video {
+        display: flex;
+    }
+
+    .secao-informacoes-tutorial__conteiner--leitura-data-video__tempo, .secao-informacoes-tutorial__conteiner--leitura-data-video__span, .secao-informacoes-tutorial__conteiner--leitura-data-video__paragrafo {
+        font-size: .69rem;
+
+        margin: 0 .3rem 0 .3rem;
+    }
+
+    .secao-informacoes-tutorial__conteiner-redes-sociais__lista {
+        list-style: none;
+
+        display: flex;
+        gap: 1.5rem;
+
+        margin: 1rem 0 1rem 0;
+    }
+
+    .secao-tutoriais-relacionados, .secao-artigos-relacionados {
+        padding: 0 1.5625rem 0 1.5625rem;
+    }
+
+     .secao-tutoriais-relacionados::after {
+         transform: skewY(-5deg);
+
+         height: 8%;
+     }
+
+    .conteiner__linha--tutoriais-relacionados {
+        width: 100%;
+
+        margin-top: 6rem;
+    }
+
+    .secao-tutoriais-relacionados__titulo, .secao-artigos-relacionados__titulo {
+        font-size: 1.5rem;
+
+        padding: 1.25rem 0 1.25rem 0;
+    }
+
+    .secao-tutoriais-relacionados__lista {
+        flex-direction: column;
+    }
+
+    .secao-tutoriais-relacionados__lista__item__link__titulo, .secao-tutoriais-relacionados__lista__item__link__artigo {
+        padding: 0 1.7rem 0 1.7rem;
+    }
+
+    .secao-tutoriais-relacionados__lista__item__link__titulo {
+        font-size: 1.4rem;
+    }
+
+    .secao-tutoriais-relacionados__lista__item__link__artigo__paragrafo {
+        font-size: 1.1rem;
+        line-height: 1.8rem;
+    }
+
+    .secao-artigos-relacionados--pagina-de-conteudo-tutoriais {
+        background: transparent;
+        border-top: none;
+    }
+
+    .secao-artigos-relacionados__titulo {
+        margin: 0;
+    }
+
+    .secao-artigos-relacionados__lista--pagina-de-conteudo-tutoriais {
+        margin-top: 2.5rem;
+    }
+}
+
+
+@media screen and (min-width: 1000px) {
+    /* Página geral de artigos */
+    .secao-inicio--pagina-geral-de-artigos::after {
+        height: 20%;
+    }
+
+    .secao-artigos-gerais--pagina-geral-de-artigos__titulo {
+        margin-top: 8.5rem;
+    }
+
+    .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item {
+        width: 31%;
+    }
+    
+    
+    /* Página geral de Tutoriais */
+    .secao-inicio--pagina-geral-de-tutoriais__conteiner--titulo {
+        width: 45%;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__conteiner__titulo {
+        font-size: 2rem;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__titulo, .secao-tutoriais-gerais--pagina-geral-de-tutoriais__titulo {
+        text-align: left;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes {
+        width: 10%;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item {
+        width: 31%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    /* Cabeçalho */
+    .cabecalho {
+        top: 0;
+        
+        flex-direction: row;
+        justify-content: space-between;
+        
+        position: sticky;
+    }
+
+    .cabecalho__logo {
+        justify-content: start;
+    }
+    
+    .cabecalho__conteiner__logo {
+         padding: initial; 
+     }
+    
+     .cabecalho__navegacao__lista {
+         height: 4.375rem;
+
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .cabecalho__navegacao__lista__item {
+        border-bottom: none;
+        border-top: none;
+
+        text-align: center;
+
+        width: 10.8625rem;
+        position: relative;
+    }
+
+    .cabecalho__navegacao__lista__item__link {
+        justify-content: center;
+    }
+
+    .cabecalho__navegacao__lista__item:hover {
+        border-bottom: 1px solid #20e456;
+        border-top: 1px solid #20e456;
+    }
+
+    .cabecalho__navegacao__lista__item__link::after {
+        content: "";
+
+        height: 0;
+        width: 0;
+    }
+
+    .cabecalho__navegacao__sublista {
+        background: #010300;
+        border-radius: 0 0 10px 10px;
+        box-shadow: 4px 4px 4px rgba(28, 120, 13, 0.4);
+
+        display: none;
+
+        position: absolute;
+
+        width: 100%;
+    }
+
+    .cabecalho__navegacao__sublista__item {
+        border-bottom: none;
+        border-top: none;
+
+        font-size: 0.8125rem;
+        text-align: center;
+
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .cabecalho__navegacao__sublista__item:hover {
+        background: rgb(11,20,2);
+        background: linear-gradient(90deg, rgba(11,20,2,1) 0%, rgba(32,57,6,1) 35%);
+        border-radius: 0 0 10px 10px;
+
+        color: #FFFFFF;
+    }
+
+    .cabecalho__navegacao__lista__item:hover .cabecalho__navegacao__sublista, .cabecalho__navegacao__lista .cabecalho__navegacao__lista__item.over .cabecalho__navegacao__sublista {
+        display: flex;
+        flex-direction: column;
+
+        margin-top: 2px;
+    }
+    
+    .cabecalho__navegacao__sublista__item__link {
+        text-align: center; 
+    }
+
+    .cabecalho__menu-mobile {
+        display: none;
+    }
+
+    .cabecalho__logo__link__imagem {
+        display: block;
+    }
+
+    .cabecalho__logo__link__imagem-mobile {
+        display: none;
+    }
+
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(1)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(2)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(3)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(4)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+    
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(5)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+    
+    .cabecalho__navegacao__sublista__item--sobre-nos:nth-child(6)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+    
+     .cabecalho__navegacao__sublista__item--ferramentas:nth-child(1)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+
+    .cabecalho__navegacao__sublista__item--ferramentas:nth-child(2)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+
+    .cabecalho__navegacao__sublista__item--ferramentas:nth-child(3)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+    
+    .cabecalho__navegacao__sublista__item--ferramentas:nth-child(4)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+
+    .cabecalho__navegacao__sublista__item--tutoriais:nth-child(1)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+
+    .cabecalho__navegacao__sublista__item--tutoriais:nth-child(2)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+
+    .cabecalho__navegacao__sublista__item--tutoriais:nth-child(3)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+
+    .cabecalho__navegacao__sublista__item--tutoriais:nth-child(4)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+
+    .cabecalho__navegacao__sublista__item--tutoriais:nth-child(5)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+
+    .cabecalho__navegacao__sublista__item--conceitos:nth-child(1)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+
+    .cabecalho__navegacao__sublista__item--conceitos:nth-child(2)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+
+    .cabecalho__navegacao__sublista__item--conceitos:nth-child(3)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+
+    .cabecalho__navegacao__sublista__item--conceitos:nth-child(4)::before {
+        content: " ";
+
+        height: 0;
+        width: 0;
+
+        margin-left: 0;
+    }
+    
+    .cabecalho__navegacao__sublista__item__link:focus, .cabecalho__navegacao__sublista__item:active {
+        background: linear-gradient(90deg, rgba(11,20,2,1) 0%, rgba(32,57,6,1) 35%);
+    }
+    
+    
+    /* Rodapé */
+    .rodape {
+        padding: 0 3.125rem 0 3.125rem;
+    }
+
+    .rodape__secao-informacoes {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        padding-top: 3.75rem;
+    }
+
+    .rodape__navegacao {
+        align-items: baseline;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .rodape__navegacao__conteiner-sobre-nos__lista__item, .rodape__navegacao__conteiner-ferramentas__lista__item, .rodape__navegacao__conteiner-tutoriais__lista__item, .rodape__navegacao__conteiner-artigos__lista__item {
+        margin: .5rem 0 .5rem 0;
+    }
+
+    .rodape__navegacao__conteiner-sobre-nos__lista__item__titulo, .rodape__navegacao__conteiner-ferramentas__lista__item__titulo, .rodape__navegacao__conteiner-tutoriais__lista__item__titulo, .rodape__navegacao__conteiner-artigos__lista__item__titulo {
+        font-size: 1.5rem;
+    }
+
+    .rodape__navegacao__conteiner-sobre-nos__lista__item__link, .rodape__navegacao__conteiner-ferramentas__lista__item__link, .rodape__navegacao__conteiner-tutoriais__lista__item__link, .rodape__navegacao__conteiner-artigods__lista__item__link, .rodape__secao-selos__link__paragrafo {
+        font-size: 1.2rem;
+    }
+
+    .rodape__secao-selos {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+     /* Fale Conosco */
+    .secao-contato {
+        margin: 0 13.15625rem 0 13.15625rem;
+    }
+
+    .secao-inicio__titulo--fale-conosco {
+        font-size: 2rem;
+    }
+
+    @keyframes secao-inicio__titulo--animacao--fale-conosco {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 32rem;
+        }
+    }
+    
+    .secao-inicio__conteiner { 
+        display: flex;
+        justify-content: center;
+    }
+
+    .secao-inicio__conteiner__subtitulo {
+       font-size: 1.2rem;
+        font-weight: 520;
+        
+        width: 60%;
+    }
+
+     .secao-contato__formulario__mensagem__conteiner--desktop {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .secao-contato__formulario__mensagem__conteiner--tipo-de-contato {
+        width: 40%;
+
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 0;
+    }
+
+    .secao-contato__formulario__resposta {
+        width: 45%;
+    }
+
+    .secao-contato__formulario__botao {
+        transition: all 1s ease;
+    }
+
+    .secao-contato__formulario__botao:hover {
+        background: transparent;
+        border: 1px solid #20e456;
+        cursor: pointer;
+    }
+    
+    /* Newsletter */
+    .secao-inicio__titulo--newsletter {
+        animation: secao-inicio__titulo--animacao--newsletter 4s steps(90) 1s normal both;
+        overflow: hidden;
+
+        font-size: 2em;
+        text-align: center;
+        white-space: nowrap;
+
+        height: 2.5rem;
+    }
+
+    @keyframes secao-inicio__titulo--animacao--newsletter {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 80rem;
+        }
+    }
+
+    .secao-inicio__titulo--cor {
+        animation: none;
+    }
+
+    .secao-inicio__conteiner--newsletter {
+        display: flex;
+        justify-content: center;
+
+        margin-top: 2rem;
+    }
+
+    .secao-inicio__conteiner__subtitulo--newsletter {
+        line-height: 1.5em;
+
+        font-size: 1.2em;
+        font-weight: 100;
+
+        width: 60%;
+    }
+
+    .conteiner--newsletter {
+        display: flex;
+        justify-content: center;
+
+        margin-top: 5.9375rem;
+    }
+
+    .secao-imagem {
+        background: url("../img/imagem_newsletter.svg");
+
+        height: 23.125rem;
+        width: 23.125rem;
+
+        margin-right: 5.3125rem;
+    }
+
+    .secao-contato--newsletter {
+        height: 27.5rem;
+
+        width: 50rem;
+    }
+
+    .secao-contato__formulario--newsletter {
+        padding: 2.375rem 2.8125rem 3.875rem 2.8125rem;
+    }
+
+    .secao-contato__formulario__usuario__label--newsletter {
+        font-size: 1.3em;
+    }
+
+    .secao-contato__formulario__botao--newsletter {
+        font-size: 1em;
+        font-weight: 100;
+        letter-spacing: 2px;
+    }
+
+    .secao-contato__formulario__botao--newsletter:hover {
+        background: linear-gradient(90deg, rgba(23,20,20,1) 0%, rgba(23,20,20,1) 50%, rgba(15,42,14,1) 100%);
+    }
+    
+    /* Link de voltar ao topo */
+    .conteiner__link-voltar-ao-topo {
+        opacity: 1;
+    }
+    
+    .conteiner__link__imagem-voltar-ao-topo{
+        height: 3rem;
+        width: 2.5rem;
+    }
+
+    .conteiner__link-voltar-ao-topo:hover {
+        background: #07733B;
+        cursor: pointer;
+    }
+    
+    /* Página do conteúdo de Artigos/Conceitos */
+    .principal-artigo {
+        margin: 0 9.96875rem 0 9.96875rem;
+    }
+
+    .secao-inicio-artigo__titulo {
+        font-size: 2rem;
+    }
+
+    .secao-inicio-artigo__conteiner__imagem {
+        object-fit: cover;
+
+        height: 16.625rem;
+    }
+
+    .secao-informacoes-artigo__span {
+        color: #C4C4C4;
+
+        display: inline;
+
+        margin: 0 .2rem 0 .2rem;
+    }
+
+    .secao-informacoes-artigo__conteiner--leitura-data {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .secao-conteudo__artigo__paragrafo {
+        font-size: 1rem;
+    }
+
+    .secao-conteudo-artigo__paragrafo__lista {
+        font-size: 1rem;
+    }
+
+    .secao-conteudo__artigo-referencias {
+        margin-bottom: 6rem;
+    }
+
+    .conteiner__linha-artigos-relacionados {
+        margin: 0 2.6875rem 0 2.6875rem;
+
+        border: 1px solid #20e456;
+    }
+
+    .secao-artigos-relacionados {
+        border: none;
+
+        margin-top: 0;
+    }
+
+    .secao-artigos-relacionados__titulo {
+        font-size: 2rem;
+    }
+
+    .secao-artigos-relacionados__lista {
+        width: 100%;
+
+        display: flex;
+        justify-content: center;
+
+        padding: 0 11.3125rem;
+    }
+
+    .secao-artigos-relacionados__lista__item {
+        transition: all .4s ease-in-out;
+
+        width: 40%;
+
+        margin-right: 2rem;
+    }
+
+    .secao-artigos-relacionados__lista__item:hover {
+        background: linear-gradient(90deg, #0F2A0E 0.58%, #072E0B 47.71%, rgba(3, 24, 5, 0.01) 96.85%);
+        box-shadow: 0 0 1rem #20e456;
+        
+        bottom: .5rem;
+    }
+
+    .secao-artigos-relacionados__lista__item:nth-child(2) {
+        margin-right: 0;
+    }
+
+    .secao-artigos-relacionados__lista__item__link__artigo  {
+        font-size: 1rem;
+    }
+
+    .secao-artigos-relacionados__lista__item__link__conteiner__imagem {
+        object-fit: cover;
+
+        height: 10rem;
+    }
+    
+    
+    /* Dicionário de Cibersegurança */
+    .secao-conteudo__artigo-nao-encontrado {
+       flex-direction: row;
+    }
+    
+    
+    /* Desenvolvedores */
+    .secao-inicio__titulo--desenvolvedores, .secao-inicio__titulo--orientadores {
+        font-size: 2rem;
+    }
+
+    .secao-cards-desenvolvedores__lista__item__conteiner--icone-sem-fundo-mobile, .secao-cards-desenvolvedores__lista__item__conteiner--icone-com-fundo-mobile {
+        background: none;
+    }
+
+    .secao-cards-desenvolvedores__lista__item__conteiner--icone-sem-fundo-desktop {
+        background: url("../img/icone_desenvolver_sem_fundo.svg");
+        z-index: -1;
+
+        height: 40px;
+        width: 40px;
+
+        display: flex;
+        position: absolute;
+
+        margin: 0.75rem 0 0 0.75rem;
+    }
+
+    .secao-cards-desenvolvedores__lista__item__conteiner--icone-com-fundo-desktop {
+          background: url("../img/icone_desenvolver_com_fundo.svg");
+         z-index: -1;
+
+        height: 40px;
+        width: 40px;
+
+        display: flex;
+        position: absolute;
+
+        margin: 0.75rem 0 0 0.75rem;
+    }
+
+    .secao-cards-desenvolvedores__lista, .secao-cards-orientadores__lista {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+     .secao-cards-desenvolvedores__lista__item, .secao-cards-orientadores__lista__item {
+         transition: 2s;
+
+         width: 35%;
+    }
+
+    .secao-cards-desenvolvedores__lista__item:nth-child(1), .secao-cards-desenvolvedores__lista__item:nth-child(3), .secao-cards-orientadores__lista__item:nth-child(1) {
+        margin-right: 4rem;
+    }
+    
+    .secao-cards-orientadores__lista__item:nth-child(1) {
+        height: inherit;
+    }
+
+    .secao-cards-desenvolvedores__lista__item__paragrafo, .secao-cards-orientadores__lista__item__paragrafo {
+        font-size: 1rem;
+
+        margin-bottom: 2rem;
+    }
+
+    .secao-cards-desenvolvedores__lista__item:hover, .secao-cards-orientadores__lista__item:hover {
+        background: rgba(0, 0, 0, 0.1);
+    }
+
+    .secao-cards-desenvolvedores__lista__item__secao-redes-sociais__conteiner__lista__item__link, .secao-cards-orientadores__lista__item__secao-redes-sociais__conteiner__lista__item__link {
+        transition: .2s ease-in-out;
+    }
+
+    .secao-cards-desenvolvedores__lista__item__secao-redes-sociais__conteiner__lista__item__link:hover, .secao-cards-orientadores__lista__item__secao-redes-sociais__conteiner__lista__item__link:hover {
+        filter: drop-shadow(1px 1px 1px rgba(10, 246, 76, 0.61));
+    }
+    
+    
+    /* Instituição */
+    .principal-instituicao {
+        margin: 0 9.96875rem 0 9.96875rem;
+    }
+    
+    .secao-inicio__titulo--instituicao { 
+        font-size: 2rem;
+    }
+
+    .secao-informacoes-ifsp__conteiner-logo {
+        background: url("/static/assets/img/icone_if.png");
+
+        height: 90px;
+        width: 92px;
+
+        margin-left: -0.7rem;
+    }
+
+    .secao-informacoes-ifsp__titulo {
+        color: #f1f1f1;
+
+        font-size: 1.6rem;
+        letter-spacing: 1.5px;
+    }
+
+    .secao-informacoes-ifsp__conteiner {
+        margin-bottom: 1.5625rem;
+    }
+
+    .secao-informacoes-ifsp__conteiner__informacoes {
+        margin-bottom: 0.5625rem;
+    }
+
+    .secao-informacoes-ifsp__conteiner__imagem {
+        width: 100%;
+    }
+
+    .secao-conteudo-informacoes-ifsp__artigo__paragrafo {
+        font-size: 1.1rem;
+    }
+
+    .conteiner__linha--instituicao {
+        margin: 4rem 0 2rem 0;
+    }
+
+    .secao-conteudo-informacoes-ifsp__secao__conteiner {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    
+    /* Página geral de artigos */
+    .secao-inicio--pagina-geral-de-artigos::after {
+        bottom: -10rem;
+        height: 100%;
+
+        transform: skewY(-3deg);
+    }
+    
+    .secao-inicio--pagina-geral-de-artigos__conteiner, .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes {
+        margin: 0 9.96875rem 0 9.96875rem;
+    }
+    
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes__conteiner-margem {
+        margin: 0;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__conteiner__titulo {
+        font-size: 2rem;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__conteiner--titulo {
+        width: 40%;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__conteiner--input__label__input{
+        width: 100%;
+
+        margin-bottom: 3.4375rem;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes__titulo {
+        margin-top: 0;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards {
+        overflow: initial;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item {
+        margin: .5rem 0 .5rem 0;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item:nth-child(2), .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item:nth-child(3) {
+        display: block;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-data__paragrafo, .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__secao__conteiner-tempo__paragrafo {
+        font-size: initial;
+
+        flex-direction: row;
+    }
+    
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item {
+        transition: .3s ease-in;
+
+        position: relative;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item {
+        box-shadow: none;
+    }
+    
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item:hover, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item:hover {
+        background: linear-gradient(90deg, #0F2A0E 0.58%, #072E0B 47.71%, rgba(3, 24, 5, 0.01) 96.85%);
+        box-shadow: 0 0 1rem #00ff45;
+        bottom: .5rem;
+    }
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item__conteiner__imagem, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__conteiner__imagem {
+        object-fit: cover;
+
+        height: 6rem;
+        width: 100%;
+    }
+
+    .secao-artigos-gerais--pagina-geral-de-artigos {
+        margin-top: 13rem;
+    }
+    
+    .secao-artigos-gerais--pagina-geral-de-artigos {
+        margin: 13rem 9.96875rem 0 9.96875rem;
+    } 
+
+    .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista {
+        justify-content: center;
+    }
+    
+    
+    /* Pesquisas */
+    .principal--pesquisa {
+        margin: 0 9.96875rem 0 9.96875rem;
+    }
+
+    .secao-inicio__titulo--pesquisa {
+        font-size: 2rem;
+    }
+
+    .secao-conteudo-topico__conteiner {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .secao-conteudo-topico__conteiner__titulo {
+        font-size: 1.125rem;
+    }
+
+    .secao-conteudo-topico__conteiner--linha:nth-child(1) {
+        display: none;
+    }
+
+    .secao-conteudo-topico__conteiner--linha {
+        width: 65%;
+    }
+
+    .secao-conteudo-topico__conteiner--linha2 {
+        width: 78%;
+    }
+
+    .secao-conteudo-topico__conteiner--linha3 {
+        width: 74%;
+    }
+
+    .seca-conteudo-topico--cards__lista {
+        align-items: unset; 
+        flex-direction: row;
+        gap: 1rem;
+    }
+    
+    .seca-conteudo-topico--cards__lista__item { 
+        align-items: center;
+        display: flex;
+
+        height: initial;
+        width: 30rem;
+    }
+    
+    
+    /* Política de Privacidade e Termos de Uso*/
+    .principal--documentos {
+        margin: 0 9.96875rem 0 9.96875rem;
+    }
+
+    .secao-inicio__titulo--documentos {
+        animation: secao-inicio__titulo--animacao--documentos 2s steps(50) 1s normal both;
+        overflow: hidden;
+
+        font-size: 2rem;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    @keyframes secao-inicio__titulo--animacao--documentos {
+        from {
+            width: 0;
+        }
+
+        to {
+            width: 25rem;
+        }
+    }
+
+    .secao-conteudo-documentos__conteiner__titulo {
+        font-size: 1.5rem;
+    }
+
+    .secao-conteudo-documentos__artigo__paragrafo, .secao-conteudo-documentos__artigo__lista__item__paragrafo {
+        font-size: 1.1rem;
+    }
+    
+    
+    /* Página geral de Tutoriais */
+    .secao-inicio--pagina-geral-de-tutoriais__conteiner, .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__conteiner-margem, .secao-tutoriais-gerais--pagina-geral-de-tutoriais, .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards {
+        margin: 0 9.96875rem 0 9.96875rem;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__conteiner--titulo {
+        width: 45%;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__conteiner__titulo {
+        font-size: 2rem;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes__titulo, .secao-tutoriais-gerais--pagina-geral-de-tutoriais__titulo {
+        text-align: left;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item__link__conteiner__imagem {
+        object-fit: cover;
+
+        height: 6rem;
+        width: 100%;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards {
+       overflow: initial;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item {
+        margin: 0;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais::after {
+        height: 30%;
+        transform: skewY(-5deg);
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__titulo {
+        margin-top: 15rem;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes {
+        width: 10%;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item {
+        width: 31%;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item, .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item {
+        transition: .3s ease-in;
+
+        position: relative;
+    }
+
+    .secao-inicio--pagina-geral-de-tutoriais__secao-tutoriais-recentes-cards__lista__item:hover, .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista__item:hover {
+        background: linear-gradient(90deg, #0F2A0E 0.58%, #072E0B 47.71%, rgba(3, 24, 5, 0.01) 96.85%);
+        box-shadow: 0 0 1rem #00ff45;
+
+        bottom: .5rem;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria-cards__lista {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 2rem;
+    }
+
+    .secao-tutoriais-gerais--pagina-geral-de-tutoriais__secao-categoria__conteiner-botoes__botao {
+        overscroll-behavior-y: none;
+    }
+    
+    
+     /* Página de categoria dos tutoriais */
+    .secao-inicio--pagina-categoria-tutoriais::after {
+        height: 50%;
+    }
+
+    .secao-inicio--pagina-categoria-tutoriais__conteiner, .secao-tutoriais--pagina-categoria-tutoriais {
+        margin: 0 9.96875rem 0 9.96875rem;
+    }
+
+    .secao-inicio--pagina-categoria-tutoriais__conteiner__titulo__span {
+        font-size: 2rem;
+
+        align-items: center;
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .secao-tutoriais--pagina-categoria-tutoriais__lista {
+        flex-flow: row wrap;
+    }
+
+    .secao-tutoriais--pagina-categoria-tutoriais__lista__item {
+        transition: .3s ease-in;
+
+        width: 31%;
+
+        flex-shrink: 0;
+
+        position: relative;
+    }
+
+    .secao-tutoriais--pagina-categoria-tutoriais__lista__item:hover {
+        background: linear-gradient(90deg, #0F2A0E 0.58%, #072E0B 47.71%, rgba(3, 24, 5, 0.01) 96.85%);
+        box-shadow: 0 0 1rem #00ff45;
+
+        bottom: .5rem;
+    }
+
+    .secao-tutoriais--pagina-categoria-tutoriais__lista__item__link__conteiner__imagem {
+        height: 6rem;
+        object-fit: cover;
+    }
+
+    .secao-tutoriais--pagina-categoria-tutoriais {
+        margin-top: 10rem;
+    }
+    
+    
+        /* Página do conteúdo dos Tutoriais */
+    .principal--tutorial {
+        margin: 0 9.96875rem 0 9.96875rem;
+    }
+
+    .secao-inicio-tutorial__titulo {
+        font-size: 2rem;
+    }
+
+    .secao-inicio-tutorial__conteiner__imagem {
+        object-fit: cover;
+
+        height: 16.625rem;
+
+        margin-bottom: 0;
+    }
+
+    .secao-informacoes-tutorial {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .secao-informacoes-tutorial__conteiner--leitura-data-video__tempo, .secao-informacoes-tutorial__conteiner--leitura-data-video__span, .secao-informacoes-tutorial__conteiner--leitura-data-video__paragrafo {
+        font-size: .875rem;
+    }
+
+    .secao-tutoriais-relacionados::after {
+        height: 35%;
+    }
+
+    .secao-tutoriais-relacionados__titulo {
+        margin-bottom: 2.5rem;
+        padding-top: 3rem;
+    }
+
+    .secao-tutoriais-relacionados__titulo, .secao-artigos-relacionados__titulo {
+        font-size: 2rem;
+    }
+
+    .secao-tutoriais-relacionados__lista__item__link__conteiner__imagem {
+        height: 15rem;
+    }
+
+    .secao-tutoriais-relacionados__lista {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .secao-tutoriais-relacionados__lista__item {
+        width: 40%;
+    }
+
+    .secao-artigos-relacionados.secao-artigos-relacionados--pagina-de-conteudo-tutoriais {
+        margin-top: 12.75rem;
+    }
+
+    .secao-artigos-relacionados__lista.secao-artigos-relacionados__lista--pagina-de-conteudo-tutoriais {
+        margin-top: 3rem;
+    }
+
+    .secao-artigos-relacionados__lista__item--pagina-de-conteudo-tutoriais {
+        width: 50%;
+    }
+
+    .secao-tutoriais-relacionados__lista__item {
+        border: 1px solid #20e456;
+        transition: .3s ease-in;
+
+        position: relative;
+    }
+
+    .secao-tutoriais-relacionados__lista__item:hover {
+        background: linear-gradient(90deg, #196b16 0.58%, #196b16 47.71%, rgba(3, 24, 5, 0.01) 96.85%);
+        box-shadow: 0 0 1rem #204607;
+        bottom: .5rem;
+    }
+}
+
