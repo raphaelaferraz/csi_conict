@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .btn-acessar-conteudo{
+            background: rgb(0,0,0);
+            background: linear-gradient(90deg, rgba(0,0,0,1) 20%, rgba(25,149,81,1) 80%, rgba(0,0,0,1) 100%);
+            padding: 20px 25px 20px 25px;
+            color: #fff;
+            font-size: 20px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        p{
+            font-size: 20px;
+            text-align: center;
+        }
+
+        h1{
+            font-size: 40px;
+            text-align: center;
+        }
+
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+    <body>
+        <div>
+            <img alt="logo site" src="https://res.cloudinary.com/conteudos-de-portugues/image/upload/v1652637553/banner_canal_youtube_m4rcm3.png"
+                 width="100%">
+        </div>
+
+        <div class="title"><h1>Novos conteúdos no site!</h1></div>
+
+        <div>
+
+            <p>Olá, {{ nome }}!</p>
+
+            <p>Esses foram os artigos adicionados recentemente no nosso site:</p>
+        </div>
+
+        {% if artigos %}
+        <div>
+            {% for artigo in artigos %}
+            <p><strong><a href="https://www.ciberseguranca.info/artigos/{{ artigo.titulo_para_caminho }}">{{ artigo.titulo }}</a></strong></p>
+            <img alt="capa do artigo {{ artigo.titulo_para_caminho  }}" src="{{ artigo.capa.url }}" width="50%">
+            <p>{{ artigo.resumo }}</p>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <div class="btn">
+            <a href="https://www.ciberseguranca.info" target="_blank">
+                <button class="btn-acessar-conteudo">Acessar os Conteúdos</button>
+            </a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,105 @@
+{% extends "base.html" %}  {# Essa página tem sua estrutura no arquivo base.html #}
+{% load static %}
+
+{% block meta-descricao %}
+<meta name="description" content="Entre em contato com nosso suporte. Envie sugestões, dúvidas ou reclamações relacionadas aos conteúdos de cibersegurança ou ao nosso site.">
+{% endblock %}
+
+{% block meta-keys %}
+<meta name="keywords" content="Contato, Suporte, Ajuda">
+{% endblock %}
+
+{% block title %}
+<title>Fale Conosco | Cyber Security Information</title>
+{% endblock %}
+
+
+{% block class_css_body %} class="corpo--fale-conosco" {% endblock %}
+
+
+{% block content %}
+
+<main class="principal--fale-conosco" role="main" tabindex="0">
+
+<!-- Título da Página -->
+<section id="conteudo-principal" class="secao-inicio">
+    <h1 class="secao-inicio__titulo--fale-conosco secao-inicio__titulo--animacao--fale-conosco">Como podemos te ajudar?<span class="secao-inicio__titulo__cursor">|</span></h1>
+    <section class="secao-inicio__conteiner">
+        <h2 class="secao-inicio__conteiner__subtitulo">Você tem alguma dúvida ou sugestão para a nossa equipe? Basta preencher o formulário abaixo e entraremos em contato.</h2>
+    </section>
+</section>
+
+<!-- Formulário -->
+<section class="secao-contato">
+    {% include "partials/_alertas.html" %}
+    <form class="secao-contato__formulario" method="post" action="{% url 'envio-contato' %}" enctype="multipart/form-data">
+        {% csrf_token %} {# token do django para validar formulários #}
+
+        <!-- Fieldset relacionada ao usuário -->
+        <fieldset class="secao-contato__formulario__usuario">
+            <div class="secao-contato__formulario__usuario__conteiner">
+                <label for="nome" class="secao-contato__formulario__usuario__label">Nome</label>
+                <input type="text" id="nome" name="nome" class="secao-contato__formulario__usuario__input" placeholder="Digite seu nome" required>
+            </div>
+
+            <div class="secao-contato__formulario__usuario__conteiner">
+                <label for="email" class="secao-contato__formulario__usuario__label">E-mail</label>
+                <input type="email" id="email" name="email" class="secao-contato__formulario__usuario__input" placeholder="Digite seu e-mail" required>
+            </div>
+
+            <div class="secao-contato__formulario__usuario__conteiner">
+                <label for="telefone" class="secao-contato__formulario__usuario__label">Número de Celular</label>
+                <input data-telefone type="tel" id="telefone" name="telefone" class="secao-contato__formulario__usuario__input" maxlength="15" placeholder="Digite o número do seu celular">
+            </div>
+        </fieldset>
+
+        <!-- Fieldset relacionada à mensagem -->
+        <fieldset class="secao-contato__formulario__mensagem">
+            <div class="secao-contato__formulario__mensagem__conteiner--desktop">
+                <div class="secao-contato__formulario__mensagem__conteiner secao-contato__formulario__mensagem__conteiner--tipo-de-contato">
+                        <label for="tipo-contato" class="secao-contato__formulario__mensagem__label">Tipo de Contato</label>
+                        <select id="tipo-contato" name="tipo-contato" class="secao-contato__formulario__mensagem__selecionar" required>
+                            <option class="secao-contato__formulario__mensagem__selecionar__opcao" selected disabled value>Escolha</option>
+                            <option class="secao-contato__formulario__mensagem__selecionar__opcao" value="Sugestão">Sugestão</option>
+                            <option class="secao-contato__formulario__mensagem__selecionar__opcao" value="Dúvida">Dúvida</option>
+                            <option class="secao-contato__formulario__mensagem__selecionar__opcao" value="Reporte de Erros">Reporte de Erros</option>
+                            <option class="secao-contato__formulario__mensagem__selecionar__opcao" value="Reclamação">Reclamação</option>
+                        </select>
+                </div>
+
+              <!-- Fieldset relacionada à resposta -->
+                <fieldset class="secao-contato__formulario__resposta">
+                    <div class="secao-contato__formulario__resposta__conteiner secao-contato__formulario__resposta__conteiner--preferencia-por-resposta">
+                        <!--suppress HtmlUnknownTag -->
+                        <legend class="secao-contato__formulario__resposta__legenda">Preferência por Resposta</legend>
+
+                        <div class="secao-contato__formulario__resposta__checkbox">
+                            <div class="secao-contato__formulario__resposta__checkbox--email">
+                                <input type="checkbox" id="tipo-retorno-email" name="preferencia-contato" class="secao-contato__formulario__resposta__input" value="E-mail">
+                                <label for="tipo-retorno-email" class="secao-contato__formulario__resposta__label__checkbox">E-mail</label>
+                            </div>
+
+                            <div class="secao-contato__formulario__resposta__checkbox--whatsapp">
+                                <input type="checkbox" id="tipo-retorno-celular" name="preferencia-contato" class="secao__contato__formulario__resposta__input" value="WhatsApp">
+                                <label for="tipo-retorno-celular" class="secao-contato__formulario__resposta__label__checkbox">WhatsApp</label>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+                <div class="secao-contato__formulario__resposta__conteiner">
+                    <label for="mensagem" class="secao-contato__formulario__mensagem__label">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" class="secao-contato__formulario__mensagem__textarea" maxlength="500" placeholder="Escreva a sua mensagem" required></textarea>
+                </div>
+        </fieldset>
+        <div class="secao-contato__formulario__conteiner">
+            <button type="submit" class="secao-contato__formulario__botao">Enviar</button>
+        </div>
+    </form>
+</section>
+</main>
+{% endblock %}
+
+{% block script %}
+    <script type="text/javascript" src="{% static '/assets/js/faleConosco.js' %}"></script>
+{% endblock %}
