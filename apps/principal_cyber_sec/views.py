@@ -1,8 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 
 
 def index(request):
-    return render(request, "artigos/geral_artigos.html")
+    return redirect('artigos')
 
 
 def desenvolvedores(request):
