@@ -1213,7 +1213,7 @@
         display: flex;
         align-items: center;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: end;
     }
 
     .cabecalho__navegacao__lista__item {

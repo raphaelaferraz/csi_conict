@@ -1,11 +1,8 @@
 from django.shortcuts import render
 
-# Create your views here.
-from django.shortcuts import render
-
 
 def index(request):
-    return render(request, "index.html")
+    return render(request, "artigos/geral_artigos.html")
 
 
 def desenvolvedores(request):
@@ -14,10 +11,6 @@ def desenvolvedores(request):
 
 def instituicao(request):
     return render(request, "principal/instituicao.html")
-
-
-def pesquisas(request):
-    return render(request, "principal/pesquisas.html")
 
 
 def sitemap(request):
