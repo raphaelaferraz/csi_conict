@@ -732,31 +732,7 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-    
-    
-    /* Pesquisas */
-    .principal--pesquisa {
-        margin: 0 1.5625rem 0 1.5625rem;
-    }
-
-    .secao-inicio__titulo--pesquisa {
-        font-size: 1.5rem;
-    }
-
-    .secao-conteudo-topico__conteiner__titulo {
-        font-size: 1rem;
-        font-weight: 100;
-        letter-spacing: 1.1px;
-    }
-
-    .secao-conteudo-topico__conteiner--linha {
-        background: #20e456;
-        box-shadow: 0 0 1rem #20e456;
-
-        height: 1px;
-        width: 100%;
-    }
-    
+   
     
     /* Política de Privacidade e Termos de Uso */
     .principal--documentos {
@@ -784,9 +760,11 @@
     .secao-conteudo-documentos__artigo__lista__item {
         margin-bottom: 1.2rem
     }
+}
+
 
 @media screen and (min-width: 1000px) {
-    /* Página geral de artigos */
+     /* Página geral de artigos */
     .secao-inicio--pagina-geral-de-artigos::after {
         height: 20%;
     }
@@ -806,7 +784,8 @@
     .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item {
         width: 31%;
     }
-
+}
+    
 
 @media screen and (min-width: 1200px) {
     /* Cabeçalho */
@@ -1192,6 +1171,7 @@
         background: linear-gradient(90deg, rgba(23,20,20,1) 0%, rgba(23,20,20,1) 50%, rgba(15,42,14,1) 100%);
     }
     
+    
     /* Link de voltar ao topo */
     .conteiner__link-voltar-ao-topo {
         opacity: 1;
@@ -1206,6 +1186,7 @@
         background: #07733B;
         cursor: pointer;
     }
+    
     
     /* Página do conteúdo de Artigos/Conceitos */
     .principal-artigo {
@@ -1522,57 +1503,7 @@
         justify-content: center;
     }
     
-    
-    /* Pesquisas */
-    .principal--pesquisa {
-        margin: 0 9.96875rem 0 9.96875rem;
-    }
-
-    .secao-inicio__titulo--pesquisa {
-        font-size: 2rem;
-    }
-
-    .secao-conteudo-topico__conteiner {
-        align-items: center;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .secao-conteudo-topico__conteiner__titulo {
-        font-size: 1.125rem;
-    }
-
-    .secao-conteudo-topico__conteiner--linha:nth-child(1) {
-        display: none;
-    }
-
-    .secao-conteudo-topico__conteiner--linha {
-        width: 65%;
-    }
-
-    .secao-conteudo-topico__conteiner--linha2 {
-        width: 78%;
-    }
-
-    .secao-conteudo-topico__conteiner--linha3 {
-        width: 74%;
-    }
-
-    .seca-conteudo-topico--cards__lista {
-        align-items: unset; 
-        flex-direction: row;
-        gap: 1rem;
-    }
-    
-    .seca-conteudo-topico--cards__lista__item { 
-        align-items: center;
-        display: flex;
-
-        height: initial;
-        width: 30rem;
-    }
-    
-    
+  
     /* Política de Privacidade e Termos de Uso*/
     .principal--documentos {
         margin: 0 9.96875rem 0 9.96875rem;
@@ -1604,5 +1535,5 @@
     .secao-conteudo-documentos__artigo__paragrafo, .secao-conteudo-documentos__artigo__lista__item__paragrafo {
         font-size: 1.1rem;
     }
-}}}
+}
 
