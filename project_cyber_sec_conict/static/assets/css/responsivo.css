@@ -760,9 +760,10 @@
     .secao-conteudo-documentos__artigo__lista__item {
         margin-bottom: 1.2rem
     }
+}
 
 @media screen and (min-width: 1000px) {
-    /* Página geral de artigos */
+     /* Página geral de artigos */
     .secao-inicio--pagina-geral-de-artigos::after {
         height: 20%;
     }
@@ -782,6 +783,8 @@
     .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item {
         width: 31%;
     }
+}
+    
 
 
 @media screen and (min-width: 1200px) {
