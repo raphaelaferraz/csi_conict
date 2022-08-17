@@ -727,6 +727,10 @@
     .secao-inicio--pagina-geral-de-artigos__secao-artigos-recentes-cards__lista__item, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item {
         width: 100%;
     }
+    
+    .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item {
+        width: 31%;
+    }
 
     .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao__conteiner-data__paragrafo, .secao-artigos-gerais--pagina-geral-de-artigos__secao__lista__item__secao__conteiner-tempo__paragrafo {
         flex-wrap: wrap;
