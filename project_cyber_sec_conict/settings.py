@@ -94,11 +94,13 @@ WSGI_APPLICATION = 'project_cyber_sec_conict.wsgi.application'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
 DATABASES = {
-    'ENGINE': 'django.db.backends.mysql',
-    'HOST': 'us-cdbr-east-06.cleardb.net',
-    'USER': 'bea356dae33b15',
-    'NAME': 'heroku_63ca231a9f20442',
-    'PASSWORD': '9df79990',
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': 'us-cdbr-east-06.cleardb.net',
+        'USER': 'bea356dae33b15',
+        'NAME': 'heroku_63ca231a9f20442',
+        'PASSWORD': '9df79990',
+    }
 }
 
 
