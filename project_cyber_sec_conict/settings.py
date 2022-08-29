@@ -96,10 +96,10 @@ WSGI_APPLICATION = 'project_cyber_sec_conict.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'HOST': 'us-cdbr-east-06.cleardb.net',
-        'USER': 'bea356dae33b15',
-        'NAME': 'heroku_63ca231a9f20442',
-        'PASSWORD': '9df79990',
+        'HOST': config('HOST'),
+        'USER': config('USER'),
+        'NAME': config('NAME'),
+        'PASSWORD': config('PASSWORD'),
     }
 }
 
