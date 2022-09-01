@@ -93,7 +93,15 @@ WSGI_APPLICATION = 'project_cyber_sec_conict.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-DATABASES = {'default': dj_database_url.config()}
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'HOST': config('HOST'),
+        'USER': config('USER'),
+        'NAME': config('NAME'),
+        'PASSWORD': config('PASSWORD'),
+    }
+}
 
 
 # Django cache com Memcached
