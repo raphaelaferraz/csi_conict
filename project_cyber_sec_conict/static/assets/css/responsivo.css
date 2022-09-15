@@ -1384,7 +1384,7 @@
          width: 35%;
     }
 
-    .secao-cards-desenvolvedores__lista__item:nth-child(1), .secao-cards-desenvolvedores__lista__item:nth-child(3), .secao-cards-orientadores__lista__item:nth-child(1) {
+    .secao-cards-desenvolvedores__lista__item:nth-child(1), .secao-cards-orientadores__lista__item:nth-child(1) {
         margin-right: 4rem;
     }
     
